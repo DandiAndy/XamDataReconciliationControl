@@ -1,0 +1,13 @@
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\bin\Debug\netstandard2.0\DataReconciliationCollection.deps.json
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\bin\Debug\netstandard2.0\DataReconciliationCollection.dll
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\bin\Debug\netstandard2.0\ref\DataReconciliationCollection.dll
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\bin\Debug\netstandard2.0\DataReconciliationCollection.pdb
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\obj\Debug\netstandard2.0\DataReconciliationCollection.AssemblyInfoInputs.cache
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\obj\Debug\netstandard2.0\DataReconciliationCollection.AssemblyInfo.cs
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\obj\Debug\netstandard2.0\DataReconciliationCollection.csproj.CoreCompileInputs.cache
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\obj\Debug\netstandard2.0\DataReconciliationCollection.dll
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\obj\Debug\netstandard2.0\ref\DataReconciliationCollection.dll
+C:\Users\Breas\source\repos\DataReconciliationCollection\DataReconciliationCollection\DataReconciliationCollection\obj\Debug\netstandard2.0\DataReconciliationCollection.pdb

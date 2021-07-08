@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:conv="clr-namespace:DataRec.Converters"
+             xmlns:sele="clr-namespace:DataRec.Selectors"
+             x:Class="DataRec.MainPage"
+             BackgroundColor="LightBlue"
+             Padding="5">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:PercentageToFlexBasisConverter x:Key="percentToFlexBasis" />
+            <DataTemplate x:Key="title">
+                <Label Text="{Binding Text}" 
+                       FlexLayout.Basis="{Binding Width, Converter={x:StaticResource percentToFlexBasis}}" 
+                       Padding="3" 
+                       BackgroundColor="White"/>
+            </DataTemplate>
+            <DataTemplate x:Key="checkbox">
+                <RadioButton Content="{Binding Text}"
+                             FlexLayout.Basis="{Binding Width, Converter={x:StaticResource percentToFlexBasis}}" 
+                             IsChecked="{Binding IsSelected}"
+                             Padding="3"
+                             BackgroundColor="Beige"/>
+            </DataTemplate>
+            <sele:ReconcileItemTypeSelector x:Key="reconcileItemTypeSelector"
+                                            TitleTemplate="{x:StaticResource title}"
+                                            ValueSelectionTemplate="{x:StaticResource checkbox}"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Spacing="0" Padding="0">
+        <Label Text="Data Reconciliation" FontSize="Title"/>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <FlexLayout x:Name="tableHeader" 
+                        Direction="Row"
+                        Wrap="NoWrap"
+                        AlignItems="Center"
+                        AlignContent="Start"
+                        Grid.Row="0" 
+                        BackgroundColor="LightSteelBlue" 
+                        BindableLayout.ItemsSource="{Binding ColumnHeaderCollection}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Text}" FlexLayout.Basis="{Binding Width, Converter={x:StaticResource percentToFlexBasis}}" Padding="3"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
+            <CollectionView x:Name="table" 
+                            HorizontalOptions="FillAndExpand"
+                            ItemsSource="{Binding RowDataCollection}"
+                            Grid.Row="1">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <FlexLayout Direction="Row"
+                                    Wrap="NoWrap"
+                                    AlignItems="Stretch"
+                                    AlignContent="Start"  
+                                    BackgroundColor="LightGray"
+                                    BindableLayout.ItemsSource="{Binding ReconcileItemCollection}"
+                                    BindableLayout.ItemTemplateSelector="{x:StaticResource reconcileItemTypeSelector}">
+                        </FlexLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView> 
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

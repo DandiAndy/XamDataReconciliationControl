@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qBT9qJagifjrR+bEkf6WnIsP8IdV5PrIcfPr3WNqJ8cE/p4gQQAbnuHEP67ZjTuSyBs+QGg4BlDCaETlA68Iew==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Breas\\source\\repos\\DataRec\\DataRec\\DataRec.iOS\\DataRec.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Breas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Breas\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
